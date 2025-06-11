@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+// Data kue
+string namaKue[3] = {"Brownies", "Cheesecake", "Lapis Legit"};
+int hargaKue[3] = {30000, 40000, 50000};
+
+// Fungsi login sederhana
+bool login() {
+    string user, pass;
+    cout << "=== Login Toko Kue ===\n";
+    cout << "Username: ";
+    cin >> user;
+    cout << "Password: ";
+    cin >> pass;
+    if (user == "admin" && pass == "123") {
+        cout << "Login berhasil!\n\n";
+        return true;
+    } else {
+        cout << "Login gagal!\n";
+        return false;
+    }
+}
+
+
+    return 0;
+}
